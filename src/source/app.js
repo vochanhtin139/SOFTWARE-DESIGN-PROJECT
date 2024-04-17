@@ -31,10 +31,7 @@ app.set('view engine', 'hbs');
 app.set('views', path.join(__dirname, 'resources/views'));
 
 app.get('/', (req, res) => {
-  // res.render('home');
-  // res.render('product/all-product');
-  // res.render('product/specific-product');
-  res.render('order/manage-order');
+  res.render('home');
 });
 
 module.exports = app;
