@@ -845,7 +845,7 @@ a.btn:hover, a.btn:active, a.btn:first-child:active,
       color: #fff;
       background-color: #337ab7; }
 
-.container-ext, .manage-product, .edit-product, .dashboard, .payment .delivery-addr {
+.container-ext, .manage-product, .edit-product, .dashboard {
   background-color: #fff;
   margin-top: 2rem;
   padding: 1rem 2rem; }
@@ -1214,12 +1214,24 @@ section article.skills {
             display: none;
             background-color: rgba(59, 153, 215, 0.7);
             border-radius: 5px;
-            width: 6.8rem;
+            width: 8.5rem;
             height: 3.3rem;
             font-size: 1.5rem;
-            transition: all 0.6s ease; }
-          .specific-product .payment-section .details-item .intro .report-section:hover button {
-            display: block; }
+            transition: all 0.6s ease;
+            margin-bottom: 0.3rem;
+            transition: all 0.3s; }
+          .specific-product .payment-section .details-item .intro .report-section .view-shop {
+            display: none;
+            font-size: 1.5rem;
+            width: 8.5rem;
+            background-color: rgba(59, 153, 215, 0.7);
+            padding: 0.5rem 0.5rem;
+            border-radius: 6px;
+            transition: all 0.3s; }
+          .specific-product .payment-section .details-item .intro .report-section:hover button,
+          .specific-product .payment-section .details-item .intro .report-section:hover .view-shop {
+            display: block;
+            transition: all 0.3s; }
         .specific-product .payment-section .details-item .intro .product-name {
           font-size: 3rem;
           font-weight: 700;
@@ -1241,7 +1253,7 @@ section article.skills {
       .specific-product .payment-section .details-item .details-product {
         margin-top: 2rem; }
         .specific-product .payment-section .details-item .details-product span {
-          font-size: 1.8rem; }
+          font-size: 1.6rem; }
         .specific-product .payment-section .details-item .details-product .details-list {
           font-size: 1.5rem;
           margin-left: 2rem;
@@ -1296,13 +1308,15 @@ section article.skills {
       border-radius: 1rem;
       padding: 1rem;
       width: 100%;
-      font-family: Inter; }
+      font-family: "Inter", sans-serif; }
     .specific-product .comment-section .comment-item .write-cmt .send-btn {
       position: absolute;
       font-size: 1.5rem;
       right: 0.5%;
       top: 41%;
       padding: 1rem; }
+      .specific-product .comment-section .comment-item .write-cmt .send-btn button {
+        background: transparent; }
       .specific-product .comment-section .comment-item .write-cmt .send-btn:hover i {
         opacity: 0.6; }
   .specific-product .comment-section .comment-item .comment-main .comment-user {
@@ -1325,10 +1339,11 @@ section article.skills {
         display: none;
         background-color: rgba(59, 153, 215, 0.7);
         border-radius: 5px;
-        width: 6.8rem;
         height: 3.3rem;
         font-size: 1.5rem;
-        transition: all 0.6s ease; }
+        transition: all 0.6s ease;
+        width: 8.5rem;
+        margin-bottom: 0.2rem; }
       .specific-product .comment-section .comment-item .comment-main .comment-user .report-section:hover button {
         display: block; }
     .specific-product .comment-section .comment-item .comment-main .comment-user .information .avatar .img-avatar {
@@ -1429,8 +1444,7 @@ section article.skills {
         font-size: 1.6rem; }
   .all-product .filter-vs-product {
     position: relative;
-    padding-top: 2.5rem;
-    height: 85rem; }
+    padding-top: 2.5rem; }
     .all-product .filter-vs-product .filter-section {
       background-color: #d9edf7; }
       .all-product .filter-vs-product .filter-section .search-bar {
@@ -1473,110 +1487,111 @@ section article.skills {
         background-color: #f6f6f6; }
         .all-product .filter-vs-product .filter-section .price-filter .filter-btn:hover {
           background-color: #337ab7; }
-      .all-product .filter-vs-product .filter-section .filter-type-list .list-title {
-        font-size: 2rem;
-        font-weight: 700;
-        text-transform: uppercase; }
-      .all-product .filter-vs-product .filter-section .filter-type-list .list-title + hr {
-        width: 42%; }
-      .all-product .filter-vs-product .filter-section .filter-type-list .type-item {
-        font-size: 1.6rem; }
-        .all-product .filter-vs-product .filter-section .filter-type-list .type-item a {
-          display: inline-block; }
-        .all-product .filter-vs-product .filter-section .filter-type-list .type-item a .type-name {
-          color: #31383e;
-          text-transform: capitalize; }
-        .all-product .filter-vs-product .filter-section .filter-type-list .type-item .number {
-          color: #31383e; }
-    .all-product .filter-vs-product .product-section .trend {
-      margin-top: 0; }
-      .all-product .filter-vs-product .product-section .trend .main-heading {
-        line-height: 3.5rem;
-        border-radius: 15px;
-        background: #337ab7;
-        color: #fff;
-        text-align: center;
-        height: 3.5rem;
-        width: 15vw; }
-      .all-product .filter-vs-product .product-section .trend .h2 {
-        display: inline-block; }
-      .all-product .filter-vs-product .product-section .trend .rectangle {
-        background: #337ab7;
-        height: 0.5rem;
-        padding: 0 0;
-        margin: auto 0; }
-      .all-product .filter-vs-product .product-section .trend .trend-row {
-        margin-top: 0; }
-        .all-product .filter-vs-product .product-section .trend .trend-row .announcement {
-          justify-content: center;
-          display: flex;
-          margin-top: 3rem;
-          font-size: 1.6rem; }
-      .all-product .filter-vs-product .product-section .trend .trend-card {
-        margin: 0;
-        border-radius: 0;
-        border: 1px solid #31383e;
-        margin-bottom: 1rem; }
-      .all-product .filter-vs-product .product-section .trend .trend-card-img {
-        background-color: #fff;
-        height: 24.3rem; }
-        .all-product .filter-vs-product .product-section .trend .trend-card-img .trend-prod-img {
-          float: left;
-          height: 100%;
-          object-fit: contain; }
-      .all-product .filter-vs-product .product-section .trend .trend-card-title {
-        color: #000;
-        font-family: Inter;
-        font-size: 1.5rem;
-        font-weight: 500;
-        padding: 0 0.5rem;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        height: 4.5rem; }
-      .all-product .filter-vs-product .product-section .trend .trend-card-price {
-        text-align: center;
-        color: #000;
-        font-weight: 700; }
-      .all-product .filter-vs-product .product-section .trend .trend-card-btn {
-        text-transform: uppercase;
-        border-radius: 0;
-        background: #31383e;
-        font-weight: 700;
-        color: #fff; }
-      .all-product .filter-vs-product .product-section .trend figure a.btn:link,
-      .all-product .filter-vs-product .product-section .trend figure a.btn:visited {
-        border-radius: 0;
-        background: #31383e; }
-      .all-product .filter-vs-product .product-section .trend .see-more-btn {
-        margin-top: 2rem;
-        margin-bottom: 8rem;
-        display: flex;
-        align-items: center;
-        justify-content: center; }
-        .all-product .filter-vs-product .product-section .trend .see-more-btn .trend-btn {
-          width: 15vw;
-          text-transform: uppercase;
+      .all-product .filter-vs-product .filter-section .filter-type-list {
+        height: 100%; }
+        .all-product .filter-vs-product .filter-section .filter-type-list .list-title {
+          font-size: 2rem;
           font-weight: 700;
-          border: 3px solid #337ab7;
-          background: #fff;
+          text-transform: uppercase; }
+        .all-product .filter-vs-product .filter-section .filter-type-list .list-title + hr {
+          width: 42%; }
+        .all-product .filter-vs-product .filter-section .filter-type-list .type-item {
+          font-size: 1.6rem; }
+          .all-product .filter-vs-product .filter-section .filter-type-list .type-item a {
+            display: inline-block; }
+          .all-product .filter-vs-product .filter-section .filter-type-list .type-item a .type-name {
+            color: #31383e;
+            text-transform: capitalize; }
+          .all-product .filter-vs-product .filter-section .filter-type-list .type-item .number {
+            color: #31383e; }
+    .all-product .filter-vs-product .product-section {
+      height: 100%; }
+      .all-product .filter-vs-product .product-section .trend {
+        margin-top: 0;
+        margin-bottom: 0; }
+        .all-product .filter-vs-product .product-section .trend .pagination-container {
+          width: 30rem;
+          margin-bottom: 2rem;
+          margin-top: 2rem; }
+        .all-product .filter-vs-product .product-section .trend .main-heading {
+          line-height: 3.5rem;
           border-radius: 15px;
-          color: #337ab7; }
-        .all-product .filter-vs-product .product-section .trend .see-more-btn .trend-btn:hover {
+          background: #337ab7;
           color: #fff;
-          background-color: #337ab7; }
-    .all-product .filter-vs-product .pagination-container {
-      position: absolute;
-      width: 29rem;
-      margin: 2rem auto;
-      bottom: 0%;
-      right: 24%; }
-      .all-product .filter-vs-product .pagination-container .pagination {
-        margin-bottom: 0.6rem; }
+          text-align: center;
+          height: 3.5rem;
+          width: 15vw; }
+        .all-product .filter-vs-product .product-section .trend .h2 {
+          display: inline-block; }
+        .all-product .filter-vs-product .product-section .trend .rectangle {
+          background: #337ab7;
+          height: 0.5rem;
+          padding: 0 0;
+          margin: auto 0; }
+        .all-product .filter-vs-product .product-section .trend .trend-row {
+          margin-top: 0;
+          height: 76rem; }
+          .all-product .filter-vs-product .product-section .trend .trend-row .announcement {
+            justify-content: center;
+            display: flex;
+            margin-top: 3rem;
+            font-size: 1.6rem; }
+        .all-product .filter-vs-product .product-section .trend .trend-card {
+          margin: 0;
+          border-radius: 0;
+          border: 1px solid #31383e;
+          margin-bottom: 1rem; }
+        .all-product .filter-vs-product .product-section .trend .trend-card-img {
+          background-color: #fff;
+          height: 24.3rem; }
+          .all-product .filter-vs-product .product-section .trend .trend-card-img .trend-prod-img {
+            float: left;
+            height: 100%;
+            object-fit: contain; }
+        .all-product .filter-vs-product .product-section .trend .trend-card-title {
+          color: #000;
+          font-family: Inter;
+          font-size: 1.5rem;
+          font-weight: 500;
+          padding: 0 0.5rem;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          height: 4.5rem; }
+        .all-product .filter-vs-product .product-section .trend .trend-card-price {
+          text-align: center;
+          color: #000;
+          font-weight: 700; }
+        .all-product .filter-vs-product .product-section .trend .trend-card-btn {
+          text-transform: uppercase;
+          border-radius: 0;
+          background: #31383e;
+          font-weight: 700;
+          color: #fff; }
+        .all-product .filter-vs-product .product-section .trend figure a.btn:link,
+        .all-product .filter-vs-product .product-section .trend figure a.btn:visited {
+          border-radius: 0;
+          background: #31383e; }
+        .all-product .filter-vs-product .product-section .trend .see-more-btn {
+          margin-top: 2rem;
+          margin-bottom: 8rem;
+          display: flex;
+          align-items: center;
+          justify-content: center; }
+          .all-product .filter-vs-product .product-section .trend .see-more-btn .trend-btn {
+            width: 15vw;
+            text-transform: uppercase;
+            font-weight: 700;
+            border: 3px solid #337ab7;
+            background: #fff;
+            border-radius: 15px;
+            color: #337ab7; }
+          .all-product .filter-vs-product .product-section .trend .see-more-btn .trend-btn:hover {
+            color: #fff;
+            background-color: #337ab7; }
 
 .sales-page {
   margin-top: 14rem; }
   .sales-page .manage-order {
-    min-height: 65rem;
     padding: 1rem 2rem; }
     .sales-page .manage-order .page-title {
       padding: 2rem 0;
@@ -1613,7 +1628,7 @@ section article.skills {
       display: flex;
       align-items: center;
       justify-content: center;
-      min-height: 60vh; }
+      max-height: 40rem; }
       .sales-page .manage-order .modal.product-details .modal-dialog .modal-content .modal-header .modal-title {
         text-transform: uppercase;
         font-size: 1.8rem !important;
@@ -1735,7 +1750,8 @@ section article.skills {
 
 .agree-term {
   padding-left: 2.2rem;
-  padding-top: 2rem; }
+  padding-top: 2rem;
+  margin-left: 0.5rem; }
 
 .alert-pending {
   width: 42%; }
@@ -1997,29 +2013,33 @@ section article.skills {
 
 .payment {
   min-height: 100vh; }
-  .payment .delivery-addr .title {
-    display: flex;
-    align-items: center; }
-    .payment .delivery-addr .title svg {
-      display: inline-block;
-      line-height: 3.6rem;
-      margin-right: 1rem; }
-    .payment .delivery-addr .title p {
-      color: #000;
-      text-align: center;
+  .payment .delivery-addr {
+    background-color: #fff;
+    margin-top: 17rem;
+    padding: 1rem 2rem; }
+    .payment .delivery-addr .title {
+      display: flex;
+      align-items: center; }
+      .payment .delivery-addr .title svg {
+        display: inline-block;
+        line-height: 3.6rem;
+        margin-right: 1rem; }
+      .payment .delivery-addr .title p {
+        color: #000;
+        text-align: center;
+        font-family: Inter;
+        font-size: 2.4rem;
+        font-weight: 700;
+        display: inline-block; }
+    .payment .delivery-addr .del-info {
       font-family: Inter;
-      font-size: 2.4rem;
-      font-weight: 700;
-      display: inline-block; }
-  .payment .delivery-addr .del-info {
-    font-family: Inter;
-    font-size: 1.6rem; }
-    .payment .delivery-addr .del-info .del-first {
-      color: #000;
-      font-weight: 700;
-      display: block; }
-    .payment .delivery-addr .del-info .del-second {
-      line-height: 2.4rem; }
+      font-size: 1.6rem; }
+      .payment .delivery-addr .del-info .del-first {
+        color: #000;
+        font-weight: 700;
+        display: block; }
+      .payment .delivery-addr .del-info .del-second {
+        line-height: 2.4rem; }
   .payment .delivery-box {
     background-color: #f6f6f6;
     padding: 2rem 4rem;
@@ -2394,6 +2414,8 @@ section article.skills {
       .sales-page .review-shop .row .review-section .card .card-footer {
         display: flex;
         justify-content: right; }
+        .sales-page .review-shop .row .review-section .card .card-footer .modal-content {
+          height: 41rem; }
         .sales-page .review-shop .row .review-section .card .card-footer .btn-close {
           width: 5rem; }
         .sales-page .review-shop .row .review-section .card .card-footer .modal-footer button {
