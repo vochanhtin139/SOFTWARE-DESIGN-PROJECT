@@ -22,20 +22,29 @@ Thông tin về việc cấu hình các biến môi trường và các tài nguy
   - `SECRET_KEY`: Khóa bí mật cho mã hóa
   Đặt các biến này trong một tệp `.env` trong thư mục gốc của dự án.
 ### Cấu trúc thư mục
-Cấu trúc thư mục của dự án:
+Cấu trúc thư mục chính của dự án:
 ```
-/proj_root
-    /node_modules
     /src
-        /controllers
         /config
+	/controllers
+	/helpers
+	/middleware
         /models
+	/node_modules
 	/repositories
         /routes
-    /public
-    /views
-    .env
-    server.js
+    	/source
+		/public
+			/css
+			/img
+			/js
+    		/resources
+			/scss
+			/views
+		app.js
+		server.js
+	/utils
+    	config.env
 ```
 ## Chạy dự án
 - **Mở terminal trong folder src và nhập command sau**:
