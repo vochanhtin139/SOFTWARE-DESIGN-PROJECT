@@ -1,14 +1,14 @@
 # Hướng dẫn cách build sourcecode cũng như cấu hình
-## Yêu cầu Hệ Thống
+## Yêu cầu hệ thống
 - **Node.js**: Phiên bản mới nhất (tải về từ nodejs.org)
 - **NPM**: Phiên bản mới nhất (đã được cài đặt với Node.js)
 - **Database**: MongoDB
-## Cài đặt và Cấu hình
-### Cài đặt Ban Đầu
+## Cài đặt và cấu hình
+### Cài đặt ban đầu
 1. **Clone dự án**:
    ```
    git clone [URL của Repository]
-   cd [Tên Thư Mục]
+   cd [Tên thư mục]
    ```
 2. **Cài đặt các package**:
    ```
@@ -21,8 +21,8 @@ Thông tin về việc cấu hình các biến môi trường và các tài nguy
   - `DB_URL`: URL kết nối cơ sở dữ liệu
   - `SECRET_KEY`: Khóa bí mật cho mã hóa
   Đặt các biến này trong một tệp `.env` trong thư mục gốc của dự án.
-### Cấu trúc Thư Mục
-Giải thích cấu trúc thư mục của dự án:
+### Cấu trúc thư mục
+Cấu trúc thư mục của dự án:
 ```
 /proj_root
     /node_modules
@@ -37,14 +37,14 @@ Giải thích cấu trúc thư mục của dự án:
     .env
     server.js
 ```
-## Chạy Dự Án
+## Chạy dự án
 - **Mở terminal trong folder src và nhập command sau**:
   ```
   npm start
   ```
 - **Truy cập**:
   - Mở trình duyệt và truy cập `http://localhost:3000`
-## Kiểm Thử
+## Kiểm thử
 Hướng dẫn chi tiết về cách thực hiện kiểm thử tự động:
 ```
 npm test
